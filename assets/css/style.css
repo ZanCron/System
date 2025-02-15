@@ -1,0 +1,42 @@
+body{
+    font-family: 'Inter var', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+  --primary: #1e40af;
+}
+
+.theme-color{
+  background-color: var(--primary);
+}
+.theme-text-color{
+  color: var(--primary);
+}
+
+.same-height {
+    height: calc(2.25rem + 20px);
+}
+
+.toggler{
+  border-radius: 50%;
+  height: 50px;
+}
+
+.toggler:hover{
+  background-color: var(--bs-gray-200);
+}
+
+.no-hover {
+    pointer-events: none; 
+    color: #6c757d !important; /* Matches Bootstrap's disabled text color */
+    text-decoration: none !important; /* Removes underline on hover */
+  }
+  
+  .no-hover:hover {
+    all: unset;
+    background-color: transparent !important; /* Ensures no hover background */
+    color: #6c757d !important; /* Keeps text color consistent on hover */
+  }
+  
